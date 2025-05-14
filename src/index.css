@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* Site-wide styles */
+body {
+  background-color: #f9fafb; /* Light gray background */
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Fix for fixed navbar */
+body.has-navbar {
+  transition: padding-top 0.3s ease;
+}
+
+/* Add smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7c3aed;
+}
+
+/* Focus styles for accessibility */
+:focus {
+  outline: 2px solid #7c3aed;
+  outline-offset: 2px;
+}
+
+/* Remove outline for mouse users, keep for keyboard navigation */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
